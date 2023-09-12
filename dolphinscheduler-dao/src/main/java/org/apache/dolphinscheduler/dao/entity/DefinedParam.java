@@ -19,6 +19,7 @@ public class DefinedParam {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
+
     /**
      * key
      */
@@ -50,6 +51,7 @@ public class DefinedParam {
     public void setId(Integer id) {
         this.id = id;
     }
+
 
     public String getKey() {
         return this.key;
