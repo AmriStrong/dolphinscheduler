@@ -1536,6 +1536,7 @@ public class ProcessServiceImpl implements ProcessService {
             taskInstance.setFirstSubmitTime(taskInstance.getSubmitTime());
         }
 
+
         // New DATAX task custom parameters
         if ("DATAX".equals(taskInstance.getTaskType())) {
             try {

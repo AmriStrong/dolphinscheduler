@@ -13,6 +13,7 @@ import lombok.Data;
 @Data
 @TableName("t_ds_defined_param")
 public class DefinedParam {
+
     /**
      * id
      */
