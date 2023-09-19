@@ -33,9 +33,12 @@ spring:
       spec: maximumSize=100,expireAfterWrite=300s,recordStats
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.200.21.135:3306/dolphinscheduler_bak?useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://106.52.180.59:3306/dolphinschedulerdev?useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
     username: root
-    password: hxzYsxaDtB0X
+    password: root123
+#    url: jdbc:mysql://10.200.21.135:3306/dolphinscheduler_bak?useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+#    username: root
+#    password: hxzYsxaDtB0X
     hikari:
       connection-test-query: select 1
       minimum-idle: 5
@@ -73,14 +76,14 @@ registry:
   type: zookeeper
   zookeeper:
     namespace: dolphinscheduler
-    connect-string: localhost:2181
+    connect-string: 106.52.180.59:2181
     retry-policy:
       base-sleep-time: 60ms
       max-sleep: 300ms
       max-retries: 5
     session-timeout: 30s
     connection-timeout: 9s
-    block-until-connected: 600ms
+    block-until-connected: 30s
     digest: ~
 
 master:

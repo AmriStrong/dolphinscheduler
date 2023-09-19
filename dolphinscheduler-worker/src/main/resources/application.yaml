@@ -25,14 +25,14 @@ registry:
   type: zookeeper
   zookeeper:
     namespace: dolphinscheduler
-    connect-string: localhost:2181
+    connect-string: 106.52.180.59:2181
     retry-policy:
       base-sleep-time: 60ms
       max-sleep: 300ms
       max-retries: 5
     session-timeout: 30s
     connection-timeout: 9s
-    block-until-connected: 600ms
+    block-until-connected: 30s
     digest: ~
 
 worker:
